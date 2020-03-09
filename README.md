@@ -1,5 +1,8 @@
 # cordova-plugin-video-thumbnail
-获取本地视频的缩略图
+
+Plugin based on https://github.com/lulee007/cordova-plugin-video-thumbnail
+The name of the thumbnail is randomized in order to avoid that two different videos have the same thumbnail (during batch processing)
+
 ### Using the plugin
 method:  
 `videoThumbnail.build`  
