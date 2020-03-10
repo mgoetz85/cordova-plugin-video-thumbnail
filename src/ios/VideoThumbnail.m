@@ -38,7 +38,7 @@ if(![saveFolder hasSuffix:@"/"]){
 }
 NSTimeInterval  now=   [NSDate date].timeIntervalSince1970;
 NSString* nowString=[NSString stringWithFormat:@"%.0f",now];
-NSString* randomVal=[NSString stringWithFormat:@"%.0f", (arc4random()%100000)+1];
+NSString* randomVal=[[NSProcessInfo processInfo] globallyUniqueString];
 NSString * savePath=[NSString stringWithFormat:@"%@thumbnail_%@_%@.jpg",saveFolder,nowString,randomVal];
 [self.commandDelegate runInBackground:^{
   CDVPluginResult* pluginResult=nil;
